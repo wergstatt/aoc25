@@ -1,0 +1,11 @@
+unit_tests:
+  - name: test_rotations
+    model: rotations
+    given:
+      - input: ref('puzzle_inputs')
+        rows:
+          - { rn: 1, val: "R20" }
+    expect:
+      rows:
+        - { rn: 0, rotate: 50 }
+        - { rn: 1, rotate: 20 }

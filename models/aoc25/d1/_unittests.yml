@@ -1,8 +1,8 @@
 unit_tests:
-  - name: test_rotations
-    model: rotations
+  - name: test_aoc_d1_rotations
+    model: aoc25_d1_rotations
     given:
-      - input: ref('puzzle_inputs')
+      - input: ref('aoc25_d1_puzzle_inputs')
         rows:
           - { rn: 1, val: "R20" }
     expect:

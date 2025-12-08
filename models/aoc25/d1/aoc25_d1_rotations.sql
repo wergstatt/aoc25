@@ -6,4 +6,4 @@ union all
 select
   rn,
   (2*(left(val, 1) = 'R')::int - 1) * ltrim(val, 'LR')::int as rotate
-from {{ ref('puzzle_inputs') }}
+from {{ ref('aoc25_d1_puzzle_inputs') }}
